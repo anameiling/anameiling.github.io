@@ -20,7 +20,7 @@ if(typeof Number.prototype.toRad == "undefined"){
 }
 
 function roundVal(val){
-    let dec 2;
+    let dec = 2;
     let result = Math.round(val * Math.pow(10,dec)) / Math.pow(10,dec);
     return result;
 }
