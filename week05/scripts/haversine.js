@@ -46,7 +46,7 @@ elLocate.addEventListener("click",function(){
             let userLat = position.coords.latitude;
             let userLong = position.coords,longitude;
 
-            let distances = calculateDistances(userLat, userLong);
+            let distances = calculateDistance(userLat, userLong);
 
             elLat.innerHTML = "Your latitude : " + userLat;
             elLong.innerHTML = "Your longitude : " + longitude;
@@ -58,5 +58,5 @@ elLocate.addEventListener("click",function(){
     }else{
         alert("Geolocation is not supported")
     }
-    
+
 });
