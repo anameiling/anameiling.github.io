@@ -30,4 +30,9 @@ window.onload = function (){
         seekBar.value = value;
     });
 
+    let volumeCtrl = document.getElementById("volume");
+    volumeCtrl.addEventListener("change", function (){
+        video.volume = volumeCtrl.value;
+    });
+
 };
