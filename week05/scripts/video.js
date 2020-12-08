@@ -10,4 +10,14 @@ window.onload = function(){
     pauseBtn.addEventListener("click", function(){
         video.pause();
     });
+
+    let freezeBtn = document.getElementById("freezeBtn");
+    freezeBtn.addEventListener("mousedown",functions(){
+        video.pause();
+    });
+
+    let freezeBtn = document.getElementById("freezeBtn");
+    freezeBtn.addEventListener("mouseup",functions(){
+        video.play();
+    });
 };
