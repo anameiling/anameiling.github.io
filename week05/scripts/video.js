@@ -1,13 +1,13 @@
-window.onload = function(){
+window.onload = function (){
     let video = document.getElementById("myVideo");
 
     let playBtn = document.getElementById("playBtn");
-    playBtn.addEventListener("click",function(){
+    playBtn.addEventListener("click",function (){
         video.play();
     });
 
     let pauseBtn = document.getElementById("pauseBtn");
-    pauseBtn.addEventListener("click", function(){
+    pauseBtn.addEventListener("click", function (){
         video.pause();
     });
 
@@ -20,12 +20,12 @@ window.onload = function(){
     });
 
     let seekBar = document.getElementById("seekBar");
-    seekBar.addEventListener("change", function(){
+    seekBar.addEventListener("change", function (){
         let time = video.duration * (seekBar.value / 100);
         video.currentTime = time;
     });
 
-    seekBar.addEventListener("timeupdate", function(){
+    seekBar.addEventListener("timeupdate", function (){
         let value = (100 / video.duration) * video.currentTime;
         seekBar.value = value;
     });
