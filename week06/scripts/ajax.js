@@ -17,7 +17,7 @@ function getRandomUser() {
             elUserImage.title = data.results[0].name.first + " " + data.results[0].name.last;
             elLastName.innerHTML = data.results[0].name.last;
             elPhone.innerHTML = data.results[0].phone;
-            elAddress.innerHTML = data.results[0].location.street.number + ", " 
+            elAddress.innerHTML = data.results0].location.street.number + ", " 
                 + data.results[0].location.street.name + ", <br>" 
                 + data.results[0].location.postcode + " " 
                 + data.results[0].location.city + ", <br>" 
