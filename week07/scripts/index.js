@@ -41,10 +41,11 @@ let app4 = new Vue({
 let app5 = new Vue({
     el:"#app5",
     data: {
-        messageL "Hakim Ariff"
+        message: "Hakim Ariff"
     },
     methods: {
         reverseMessage: function(){
-            this.message = this.message.split("").reverse().join("");        }
+            this.message = this.message.split("").reverse().join("");        
+        }
     }
 })
