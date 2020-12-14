@@ -24,7 +24,7 @@ let app3 = new Vue({
 let app4 = new Vue({
     el: "#app4",
     data: {
-        todos: {
+        todos: [
             {
                 text: "Learn Javascript"
             },
@@ -34,6 +34,6 @@ let app4 = new Vue({
             {
                 text: "Build something awesome!"
             }
-        }
+        ]
     }
 });
