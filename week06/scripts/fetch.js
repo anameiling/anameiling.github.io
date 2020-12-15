@@ -53,8 +53,8 @@ function BookNow(guestName, guestEmail, guestPax) {
 
 let bookNow = document.getElementById("bookNow");
 bookNow.addEventListener("click", function(){
-    let gName = document.getElementById("guestEmail").value;
-    let gEmail = document.getElementById("guestName").value;
+    let gName = document.getElementById("guestName").value;
+    let gEmail = document.getElementById("guestEmail").value;
     let gPax = document.getElementById("guestPax").value;
 
     BookNow(gName, gEmail, gPax);
