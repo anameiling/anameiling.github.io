@@ -37,3 +37,9 @@ function GetBookings() {
             }
         });
 }
+
+window.addEventListener("load", function() {
+    document.getElementById("refreshList".addEventListener("click", function() {
+         GetBookings();
+    });
+})
