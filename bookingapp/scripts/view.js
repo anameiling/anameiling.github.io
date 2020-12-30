@@ -1,4 +1,4 @@
-function GetBookings() {
+function GetBooking() {
     let url = 'https://api.sheety.co/2287ba5e9c156f97e011e5cdc03a23cc/studioSessionBookingApp/booking';
     fetch(url)
         .then((response) => response.json())
@@ -13,13 +13,13 @@ function GetBookings() {
                 bookingList.deleteRow(k);
             }
 
-            for(let i = 0; i < json.bookings.length; i++){
-                let gName = json.bookings[i].name;
-                let gEmail = json.bookings[i].email;
-                let gPhone = json.bookings[i].phone;
-                let gPax = json.bookings[i].pax;
-                let gId = json.bookings[i].id;
-                let gDateTime = json.bookings[i].dateTime;
+            for(let i = 0; i < json.booking.length; i++){
+                let gName = json.booking[i].name;
+                let gEmail = json.booking[i].email;
+                let gPhone = json.booking[i].phone;
+                let gPax = json.booking[i].pax;
+                let gId = json.booking[i].id;
+                let gDateTime = json.booking[i].dateTime;
                 let buttonId = "delete" + gId;
 
                 let row = bookingList.insertRow(bookingList.rows.length);
@@ -47,7 +47,7 @@ function GetBookings() {
 
 window.addEventListener("load", function() {
     document.getElementById("refreshList").addEventListener("click", function() {
-         GetBookings();
+         GetBooking();
     });
 })
 
@@ -57,7 +57,7 @@ function DeleteBooking(id){
         method: 'DELETE',
     })
         .then((response) => {
-            GetBookings();
+            GetBooking();
         });
 
 }
