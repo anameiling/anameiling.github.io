@@ -6,7 +6,7 @@ function BookNow(guestName, guestEmail, guestPhone, guestPax, guestDateTime) {
             email: guestEmail,
             phone:guestPhone,
             pax: guestPax,
-            datetime: guestDateTime
+            date_time: guestDateTime
     }
   }
   fetch(url, {
