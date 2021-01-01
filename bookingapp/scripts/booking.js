@@ -28,7 +28,7 @@ window.addEventListener("load", function() {
         let userEmail = document.getElementById("userEmail").value;
         let userPhone = document.getElementById("userPhone").value;
         let userPax = document.getElementById("userPax").value;
-        let userDate_Time = document.getElementById("userDateTime").value = "2021-01-01T11:42:13.510";
+        let userDate_Time = document.getElementById("userDate_Time").value = "2021-01-01T11:42:13.510";
         
         BookNow(userName, userEmail, userPhone, userPax, userDate_Time);
     });
