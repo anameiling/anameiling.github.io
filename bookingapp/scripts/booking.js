@@ -1,4 +1,4 @@
-function BookNow(guestName, guestEmail, guestPhone, guestPax, guestSlot) {
+function BookNow(guestName, guestEmail, guestPhone, guestPax, guestDateTime) {
     let url = 'https://api.sheety.co/2287ba5e9c156f97e011e5cdc03a23cc/studioSessionBookingApp/booking';
     let body = {
         booking: {
@@ -6,7 +6,7 @@ function BookNow(guestName, guestEmail, guestPhone, guestPax, guestSlot) {
             email: guestEmail,
             phone:guestPhone,
             pax: guestPax,
-            slot: guestSlot
+            slot: guestDateTime
     }
   }
   fetch(url, {
@@ -28,8 +28,8 @@ window.addEventListener("load", function() {
         let userEmail = document.getElementById("userEmail").value;
         let userPhone = document.getElementById("userPhone").value;
         let userPax = document.getElementById("userPax").value;
-        let userSlot = document.getElementById("userSlot").value = d.toLocaleString();
+        let userDateTime = document.getElementById("userDateTime").value = d.toLocaleString();
         
-        BookNow(userName, userEmail, userPhone, userPax, userSlot);
+        BookNow(userName, userEmail, userPhone, userPax, userDateTime);
     });
 });
