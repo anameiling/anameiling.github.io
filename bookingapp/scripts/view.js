@@ -1,4 +1,4 @@
-function viewBooking() {
+function GetBooking() {
     let url = 'https://api.sheety.co/2287ba5e9c156f97e011e5cdc03a23cc/studioSessionBookingApp/booking';
     fetch(url)
         .then((response) => response.json())
@@ -19,7 +19,7 @@ function viewBooking() {
                 let gPhone = json.booking[i].phone;
                 let gPax = json.booking[i].pax;
                 let gId = json.booking[i].id;
-                let gDateTime= json.booking[i].dateTime;
+                let gSlot= json.booking[i].slot;
                 let buttonId = "delete" + gId;
 
                 let row = viewList.insertRow(viewList.rows.length);
@@ -28,7 +28,7 @@ function viewBooking() {
                 row.insertCell(2).innerHTML = gEmail;
                 row.insertCell(3).innerHTML = gPhone;
                 row.insertCell(4).innerHTML = gPax;
-                row.insertCell(5).innerHTML = gDateTime;
+                row.insertCell(5).innerHTML = gSlot;
                 row.insertCell(6).innerHTML = "<button id='" + buttonId + "'class='btn btn-danger'>Delete</button>";
 
                 viewIds.push(buttonId);
@@ -47,7 +47,7 @@ function viewBooking() {
 
 window.addEventListener("load", function() {
     document.getElementById("refreshList").addEventListener("click", function() {
-        viewBooking();
+        GetBooking();
     });
 })
 
@@ -57,7 +57,7 @@ function DeleteBooking(id){
         method: 'DELETE',
     })
         .then((response) => {
-            viewBooking();
+            GetBooking();
         });
 
 }
