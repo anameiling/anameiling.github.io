@@ -26,7 +26,7 @@ window.addEventListener("load", function() {
     document.getElementById("bookNow").addEventListener("click", function() {
         let userName = document.getElementById("userName").value;
         let userEmail = document.getElementById("userEmail").value;
-        let userPhone = documnet.getElementById("userPhone").value;
+        let userPhone = document.getElementById("userPhone").value;
         let userPax = document.getElementById("userPax").value;
         let userSlot = document.getElementById("userSlot").value;
         
