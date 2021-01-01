@@ -33,3 +33,4 @@ window.addEventListener("load", function() {
         BookNow(userName, userEmail, userPhone, userPax, userSlot);
     });
 });
+
