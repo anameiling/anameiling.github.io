@@ -5,151 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Craft It! Homepage</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
- 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
  <style>
-    .carousel .carousel-item {
-      height: 250px;
+
+    .title{
+        font-size: 70px;
+        color: darkorange;
+        position: relative; top:20px;
     }
 
-  .carousel-item img {
-      position: absolute;
-      object-fit:cover;
-      top: 0;
-      left: 0;
-      min-height: 250px;
-  }
+    .homepage {
+        font-size: 40px;
+        color: darkorange;
+        position: relative; top:20px;
+    }
 
-  .container {
+    .header {
+    background-color: #f1f1f1;
+    padding: 0px;
     text-align: center;
-  }
+    height: 160px;
+    }
+
+    .h2 {
+        text-align: center;
+        position: relative;
+    }
+
+     body {
+        background-image: url("https://i.ibb.co/3RkXxBf/Young-woman-wearing-apron-making-pottery-indoors-craftsperson-concept-table-with-creations-material.jpg");
+        padding-bottom: 60px;
+    }
+
+        /* Style buttons */
+     .back-btn, .home-btn {
+        background-color: orange; /* background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 12px 16px; /* Some padding */
+        font-size: 25px; /* Set a font size */
+        cursor: pointer; /* Mouse pointer on hover */
+        position: relative; left:-500px; top:-90px;
+    }
+
+    .acc-btn, .exit-btn {
+        background-color: orange; /* background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 12px 16px; /* Some padding */
+        font-size: 25px; /* Set a font size */
+        cursor: pointer; /* Mouse pointer on hover */
+        position: relative; left:500px; top:-90px;
+    }
+
+    /* Darker background on mouse-over */
+    .back-btn:hover, .home-btn:hover, .acc-btn:hover, .exit-btn:hover {
+        background-color: darkorange;
+    }
+
+    .block-1:hover, .block-2:hover {
+        background-color:darkorange;
+        color: white;
+    } 
+
+    .block-1 {
+       background-color:orange;
+       color: black;
+       font-size: 40px;
+       text-align: center;
+       width: 30%;
+       border: 1px solid orange;
+       cursor: pointer;
+       border-radius: 2px;
+       position: relative; left:250px; top: 20px;
+    }
+
+    .block-2 {
+        background-color:orange;
+        color: black;
+        font-size: 40px;
+        text-align: center;
+        width: 30%;
+        border: 1px solid orange;
+        cursor: pointer;
+        border-radius: 2px;
+        position: relative; left:250px; top: 20px;
+    }
+
   </style>
 
 </head>
 <body>
     <div class="container-fluid">
-      
-        <!--NavBar-->
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-              <span class="navbar-text">
-               Craft It! Homepage
-              </span>
+
+        <div class="header">
+           <p>
+               <strong class="title">Craft It!</strong><strong class="homepage"> Homepage</strong>
+               
+               <h2>Now Trending:</h2>
+           </p>
+           <button class="back-btn"><i class="fa fa-angle-left"></i></button>
+           <button class="home-btn"><i class="fa fa-home"></i></button>
+           <button class="acc-btn"><i class="fa fa-user-circle-o"></i></button>
+           <button class="exit-btn"><i class="fa fa-sign-out"></i></button>
+        </div>
+
+   <!-- Carousel row -->
+   <div class="row">
+    <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+        <!-- Carousel -->
+        <div id="carousel-example" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example" data-slide-to="1"></li>
+                <li data-target="#carousel-example" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dJgr784zFKQ" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/g3gz64ZbQLs" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pnZkpFtRMbo" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
-          </nav>
-
-    <!-- carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="container">
-          <h1>Now Trending:</h1>
+            <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active img-fluid">
-          <a href="https://ibb.co/jr7vgpj" target="_blank"><img src="https://i.ibb.co/jr7vgpj/Recording-Set.png" class="d-block w-100" alt="Recording-Set" border="0"></a>
-          <div class="carousel-caption">
-            <h3>Recording Studio</h3>
-            <p>A place for your music concoction!</p>
-          </div>
-        </div>
+        <!-- End carousel -->
+    </div>
+</div>
+<!-- End carousel row -->
+</div>
+</div>
 
-        <div class="carousel-item">
-          <a href="https://ibb.co/yqZFXyP" target="_blank"><img src="https://i.ibb.co/yqZFXyP/pic2.jpg" class="d-block w-100" alt="pic2" border="0"></a>
-          <div class="carousel-caption">
-            <h3>The Equipments</h3>
-            <p>Tools for your muse</p>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <a href="https://ibb.co/N617JcH" target="_blank"><img src="https://i.ibb.co/N617JcH/pic3.jpg" class="d-block w-100" alt="pic3" border="0"></a>
-          <div class="carousel-caption">
-            <h3>Recording Set</h3>
-            <p>Your music genius starts here!</p>
-          </div>
-        </div>
-
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+    <div class="buttons">
+        <button type="button" class="block-1"><span>Handcraft</span></button>
+        <button type="button" class="block-2 ml-3"><span>About Craft It!</span></button>
     </div>
 
-    <!--Jumbotron-->
-      <div class="row">
-        <div class="col">
-          <div class="jumbotron">
-            <h1 class="display-4">Bring your tunes to live with us!</h1>
-            <p class="lead">A professional looking music studio with the richness of equipments and services.</p>
-            <p class="lead">To make it easier, all you need is your creativity to stir up the concoction!</p>
-            <hr class="my-4">
-            <a class="btn btn-info" href="booking.html" role="button">I'm ready, lets rock on!</a>
-          </div>
-        </div>
-      </div>
-  </div>
+</div>
 
-  <!-- equipment list group -->
-    <h3>Equipments List</h3>
-    
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <a href="https://ibb.co/4ZMvct8" target="_blank"><img src="https://i.ibb.co/4ZMvct8/drum.jpg" class="card-img-top" alt="drum" border="0"></a>
-            <div class="card-body">
-              <h5 class="card-title">TAMA Superstar 5-piece drum kit</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <a href="https://ibb.co/hfPPvSd" target="_blank"><img src="https://i.ibb.co/hfPPvSd/piano.jpg" class="card-img-top" alt="piano" border="0"></a>
-            <div class="card-body">
-              <h5 class="card-title">Yamaha P90 Stage Piano</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <a href="https://ibb.co/0mtKYwZ" target="_blank"><img src="https://i.ibb.co/0mtKYwZ/marshall.jpg" class="card-img-top" alt="marshall" border="0"></a>
-            <div class="card-body">
-              <h5 class="card-title">Marshall MG101CFX Guitar Amp</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <a href="https://ibb.co/44DyW5n" target="_blank"><img src="https://i.ibb.co/44DyW5n/mic.jpg" class="card-img-top" alt="mic" border="0"></a>
-            <div class="card-body">
-              <h5 class="card-title">Dynamic Mics (4)</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <a href="https://ibb.co/J3KqMfk" target="_blank"><img src="https://i.ibb.co/J3KqMfk/audio-interface.jpg" class="card-img-top" alt="audio-interface" border="0"></a>
-            <div class="card-body">
-              <h5 class="card-title">Roland STUDIO-CAPTURE Audio Interface</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <a href="https://ibb.co/Kzbxvxq" target="_blank"><img src="https://i.ibb.co/Kzbxvxq/soundcraft.jpg" class="card-img-top" alt="soundcraft" border="0"></a>
-            <div class="card-body">
-              <h5 class="card-title">Soundcraft Signature 22 mixer</h5>
-            </div>
-          </div>
-        </div>
-      </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
