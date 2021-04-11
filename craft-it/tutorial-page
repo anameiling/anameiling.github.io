@@ -15,7 +15,7 @@
         position: relative; top:20px;
     }
 
-    .handcraft {
+    .tutorial-page {
         font-size: 40px;
         color: darkorange;
         position: relative; top:20px;
@@ -60,24 +60,6 @@
         background-color: darkorange;
     }
 
-    .block-1:hover, .block-2:hover, .block-3:hover {
-        background-color:darkorange;
-        color: white;
-    } 
-
-    .block-1, .block-2, .block-3 {
-       display: block;
-       margin-bottom:25px;
-       background-color:orange;
-       color: black;
-       font-size: 50px;
-       text-align: center;
-       width: 30%;
-       border: 1px solid orange;
-       cursor: pointer;
-       border-radius: 2px;
-       position: relative; left:450px; top: 50px;
-    }
 
   </style>
 
@@ -87,7 +69,7 @@
 
         <div class="header">
            <p>
-               <strong class="title">Craft It!</strong><strong class="handcraft"> Tutorial Page</strong>
+               <strong class="title">Craft It!</strong><strong class="tutorial-page"> Tutorial Page</strong>
            </p>
 
            <button class="back-btn"><i class="fa fa-angle-left"></i></button>
@@ -96,12 +78,6 @@
            <button class="exit-btn"><i class="fa fa-sign-out"></i></button>
         </div>
 
-    <div class="buttons">
-        <button type="button" class="block-1"><span>Lesson</span></button>
-        <button type="button" class="block-2"><span>Tutorial</span></button>
-        <button type="button" class="block-3"><span>Activity</span></button>
-
-    </div>
 
 </div>
 
