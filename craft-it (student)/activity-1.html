@@ -28,9 +28,9 @@
         height: 160px;
     }
 
-    .h2 {
-        text-align: center;
-        position: relative;
+    .activity-desc {
+        text-align: center; 
+        position:relative; top:20px;
     }
 
      body {
@@ -86,61 +86,45 @@
         background-color: darkorange;
     }
 
-    .block-1:hover, .block-2:hover, .block-3:hover {
-        background-color:darkorange;
-        color: white;
-    } 
-
-    .block-1, .block-2, .block-3 {
-       display: block;
-       background-color:orange;
-       color: black;
-       font-size: 30px;
-       text-align: center;
-       width: 30%;
-       border: 1px solid orange;
-       cursor: pointer;
-       border-radius: 2px;
-       position: relative; top: -130px;
-       margin-left: 800px;
-       margin-bottom: 35px;
-       padding: 5px;
-    }
-
-    .col-4-md {
-        display: block;
-        background-color: white;
+    .callout {
+        position: fixed; top: 235px; left: 470px;
+        width: 400px;
         text-align: center;
-        width: 50%;
-        height: 50px;
-        position:relative; top: 115px; 
-        border-radius: 2px;
-
+        font-size: 30px;
     }
 
-    .block {
-            display: inline-block;
-            width: 630px;
-            height: 70px;
-            margin-left: 80px;
-            margin-top: 10px;
-        }
+    .callout-container {
+        padding: 1px;
+        background-color:darkolivegreen;
+        color: white;
+    }
 
-    .block2 {
-            display: inline-block;
-            width: 630px;
-            height: 70px;
-            margin-left: 80px;
-            margin-top: 20px;
-        }
+    .btn-1 {
+        background-color: yellow;
+        border-color: yellow;
+        color: black;
+        position:relative; top:-10px;
+    }
 
-    .block3 {
-            display: inline-block;
-            width: 630px;
-            height: 70px;
-            margin-left: 80px;
-            margin-top: 20px;
-        }
+    .btn-1:hover{
+        background-color: gold;
+        border-color: gold;
+        color: black;
+    }
+
+    .submit-btn {
+        background-color: yellow;
+        border-color: yellow;
+        color: black;
+        position: relative; top:165px; left:600px;
+        width: 100px;
+    }
+
+    .submit-btn:hover{
+        background-color: gold;
+        border-color: gold;
+        color: black;
+    }
 
   </style>
 
@@ -150,35 +134,29 @@
     <div class="container-fluid">
         <div class="header">
            <p>
-               <strong class="title">Craft It!</strong><strong class="activity-page"> Activity</strong>
-           </p>
-           <a href="handcraft.html" style="text-decoration: none;"><button class="back-btn"><i class="fa fa-arrow-left"></i></button></a>
+               <strong class="title">Craft It!</strong><strong class="activity-page"> Activity 1</strong>            
+            </p>
+
+           <a href="activity-page.html" style="text-decoration: none;"><button class="back-btn"><i class="fa fa-arrow-left"></i></button></a>
            <button class="home-btn"><i class="fa fa-home"></i></button>
            <button class="acc-btn"><i class="fa fa-user-circle-o"></i></button>
            <button class="exit-btn"><i class="fa fa-sign-out"></i></button>
         </div>
 
-        <div class="row">
-            <div class="col-4-md text block">
-                <h2>Activity 1 - Anyaman Kelarai Siku Kluang</h2>
-            </div>
-            <div class="col-4-md text block2">
-                <h2>Activity 2 - Anyaman Kincir Angin</h2>
-            </div>
-            <div class="col-4-md text block3">
-                <h2>Activity 3 - Anyaman Central Diamond</h2>
-            </div>
-        </div>
-      
-    </div>
+        <div class="activity-desc">            
+            
+            <h3>Instruction: Based on tutorial video 1, try to do the webbing and upload a picture of your work!</h3>
 
-
-        <div class="buttons">
-            <a href="activity-1.html" style="text-decoration: none;"><button type="button" class="block-1"><span>View Now</span></button></a>
-            <a href="" style="text-decoration: none;"><button type="button" class="block-2"><span>View Now</span></button></a>
-            <a href="" style="text-decoration: none;"><button type="button" class="block-3"><span>View Now</span></button></a>
-    
         </div>
+
+        <div class="callout">
+            <div class="callout-container">
+              <p>Upload your work</p>
+              <button type="button" class="btn-1 btn-primary btn-lg">Upload Here</button>
+            </div>
+          </div>
+
+        <div class="submit-btn"><button type="button" class="btn-1 btn-primary btn-lg">Submit</button></div>
 
 </div>
 </div>
