@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Craft It ! </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	*{
+		box-sizing: border-box;
+	}
+	html {
+		background: url("https://i.ibb.co/StBGnM6/bground.jpg") no-repeat center fixed;
+		background-size: cover;
+		
+	}
+	.header
+	{
+		background-color: none;
+		padding: 20px;
+		text-align: center;
+	}
+	h1 {
+		color: #3333cc ;
+		text-transform: uppercase;
+		font-size: 80px;
+		text-align: center;
+	}
+	.column {
+		float: left;
+		width: 33.33%;
+		padding: 10px;
+		margin-left: 150px;
+	}
+	.row:: after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	.button {
+		margin-top: 30px;
+		margin-left: 120px;
+	}
+	.btn {
+		border: 1px solid #6699ff;
+		border-radius: 12px;
+		padding: 16px 30px;
+		color: black;
+		text-decoration: none;
+		font-size: 20px;
+		text-transform: uppercase;
+		background-color: #6699ff;
+	}
+	.center {
+		display:block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+	img {
+		display: block;
+		margin-left: 400px;
+		margin-right: auto;
+	}
+</style>
+</head>
+<body>
+
+	<div class="header">
+	<h1> Craft It ! </h1>
+	</div>
+
+	<div class="row">
+		<div class="column">
+		<img src="https://i.ibb.co/vBjy3hN/user.png" alt="user" class="center">
+			<div class="button">
+			<a href="accteacher.html" class="btn teacher"> Teacher </a>
+			</div>
+		</div>
+		<div class="column">	
+		<img src="https://i.ibb.co/vBjy3hN/user.png" alt="user" class="center">
+			<div class="button">
+			<a href="accstudent.html" class="btn student"> Student </a>
+		</div>
+		</div>
+	</div>
+
+</body>
+</html>

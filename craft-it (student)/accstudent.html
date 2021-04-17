@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Craft It ! </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    html {
+		background: url("https://i.ibb.co/StBGnM6/bground.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+    .header 
+    {
+        background-color: none;
+        text-align: center;
+        color: #3333cc ;
+        text-transform: uppercase;
+        font-size: 40px;
+        text-align: center;
+    }
+    .user img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: center;
+        width: 140px;
+    }
+    .login-page {
+        width: 360px;
+        padding: 0 0 0;
+        margin: auto;
+        float: center;
+    }
+    .form {
+        position: relative;
+        z-index: 1;
+        background: #0000ff;
+        max-width: 360px;
+        margin: 0 auto 100px;
+        padding: 45px;
+        text-align: center;
+        float: left;
+    }
+    .form input{
+        font-family: "Roboto", san-serif;
+        outline:1;
+        background: #66ffff;
+        width:100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding:15px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    .form button{
+        font-family: "Roboto" san-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background: #6699ff;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .form button:hover,.form button:active{
+        background: #43A047;
+    }
+    .form .message{
+        margin: 15px 0 0;
+        color: #003300;
+        font-size: 12px;
+    }
+    .form .message a{
+        color: #ffffff;
+        text-decoration: none:
+    }
+    .form .register-form{
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <h1> Craft It ! </h1>
+    </div>
+
+    <div class="user"> 
+    <img src="user.png">
+    </div>
+
+    <div class="login-page">
+    <div class="form">
+        <form class="login-form">
+        <input type="text" placeholder="username"/>
+        <input type="password" placeholder="password"/>
+        <button>Login </button>
+        <p class="message">Not Registered? <a href="#">Register</a>
+        </p>
+        </form>
+        
+        <form class="register-form">
+        <input type="text" placeholder="name"/>
+        <input type="text" placeholder="password"/>
+        <input type="text" placeholder="email"/>
+        <button>Create</button>
+        <p class="message">Already Registered? <a href="student-homepage.html">Login</a>
+        </p>
+        </form>
+    </div>
+    </div>
+
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'>
+    </script>
+
+    <script>
+    $('.message a').click(function(){
+        $('form').animate({height:"toggle", opacity:"toggle"},"slow");
+        });
+    </script>
+
+</body>
+</html>
