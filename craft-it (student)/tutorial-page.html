@@ -6,6 +6,7 @@
     <title>Craft It! Tutorial-page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
  <style>
 
@@ -216,8 +217,8 @@
 
            <a href="handcraft.html" style="text-decoration: none;"><button class="back-btn"><i class="fa fa-arrow-left"></i></button></a>
            <a href="student-homepage.html" style="text-decoration: none;"><button class="home-btn"><i class="fa fa-home"></i></button></a>
-           <button class="acc-btn"><i class="fa fa-user-circle-o"></i></button>
-           <a href="courseware.html" onclick="javascript:return confirm('Are you sure you want to log out?');"><button class="exit-btn"><i class="fa fa-sign-out"></i></button></a>
+           <a href="student-acc.html" style="text-decoration: none;"><button class="acc-btn"><i class="fa fa-user-circle-o"></i></button></a>
+           <button class="exit-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-sign-out"></i></button>
         </div>
 
         <div class="full-width">
@@ -234,6 +235,25 @@
           <a href="tutorial-3.html" id="playvideo"><button type="button" class="tutorial-3" style="vertical-align:middle"><span>Anyaman Central Diamond</span></button></a>
           </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Logout</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            Are you sure to logout?
+            </div>
+            <div class="modal-footer">
+            <a href="courseware.html" style="text-decoration: none;"><button type="button" class="btn btn-primary">Logout</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
 
 </div>
     <script>
@@ -242,6 +262,7 @@
         });
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
