@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Craft It !</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" href="uploadlesson.css">
+<link rel = "stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<style>
+    *{
+	box-sizing: border-box;
+    }
+    html {
+        background: url("https://i.ibb.co/DrNZ1Yt/bground2.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+    .btn {
+        background-color: #6699ff;
+        border: one;
+        color: white;
+        padding: 13px 16px;
+        font-size: 30px;
+        cursor: pointer;
+        margin-left: 30px;
+        float: left;
+        border-radius: 12px;
+    }
+    .btn-signout {
+        background-color: #6699ff;
+        border: one;
+        color: white;
+        padding: 13px 16px;
+        font-size: 30px;
+        cursor: pointer;
+        margin-right: 30px;
+        float: right;
+        border-radius: 12px;
+    }	
+    .title {
+        color: #3333cc ;
+        font-size: 40px;
+    }
+    .form{
+        position: relative;
+        z-index: 1;	
+        background: #66ccff;
+        height: 300px;
+        width: 70%;
+        margin: 0 auto 100px;
+        padding: 30px;
+        float: center;
+    }	
+    label {
+        display: inline-block;
+        text-align: right;
+        float:left;
+        font-size: 25px;
+    }
+    input {
+        display: inline-block;
+        text-align: left;
+        float:right;
+        height: 35px;
+    }
+    textarea {
+        resize: none;
+        text-align: left;
+        float: right;
+    }
+    .submit {
+        margin-top: 20px;
+        margin-left: 500px;
+        
+    }
+</style>
+<body>
+
+<a href="teachermainmenu.html"><button class="btn"><i class= "fa fa-arrow-left"></i></button></a>
+<button class="btn"><i class= "fa fa-home"></i></button>
+<button class="btn-signout"><i class= "fa fa-sign-out"></i></button>
+
+<div class="title">
+<center><h1 style="display: inline-block">Craft It !</h1><h3 style="display: inline-block">Upload Lesson</h3></center>
+</div>
+
+
+<div class="form">
+<form class="upload-form">
+	<label>TITLE </label>
+	<input type="text" name="title" placeholder=":" size="80"><br><br><br>
+	<label>DESCRIPTION </label>
+	<textarea name="description" rows="8" cols="75">:</textarea><br><br><br><br><br><br><br>	
+	
+	<div class="submit">
+	<button onclick="mySubmit()">Upload</button>
+		<script>
+		function mySubmit() {
+			confirm("Are you sure want to upload? Press OK !");
+			}
+		</script>
+	</div>
+</form>	
+</div>
+</body>
+</html>

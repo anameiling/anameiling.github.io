@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Craft It ! </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" href="uploadmark.css">
+<link rel = "stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+</head>
+<style>
+    *{
+	box-sizing: border-box;
+    }
+    html {
+        background: url("https://i.ibb.co/DrNZ1Yt/bground2.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+    .btn {
+        background-color: #6699ff;
+        border: one;
+        color: white;
+        padding: 13px 16px;
+        font-size: 30px;
+        cursor: pointer;
+        margin-left: 30px;
+        float: left;
+        border-radius: 12px;
+    }
+    .btn-signout {
+        background-color: #6699ff;
+        border: one;
+        color: white;
+        padding: 13px 16px;
+        font-size: 30px;
+        cursor: pointer;
+        margin-right: 30px;
+        float: right;
+        border-radius: 12px;
+    }
+    .header {
+        color: #3333cc ;
+        font-size: 40px;
+    }
+    table, th, td {
+        border: 1px solid #000099;
+        border-collapse: collapse;
+        background-color: #3399ff;
+        margin-left: 10%;
+        font-size: 15px;
+        float: center;
+    }
+    td {
+        text-align: center;
+    }
+</style>
+<body>
+
+<a href="teachermainmenu.html"><button class="btn"><i class= "fa fa-arrow-left"></i></button></a>
+<button class="btn"><i class= "fa fa-home"></i></button>
+<button class="btn-signout"><i class= "fas fa-sign-out-alt"></i></button>
+
+<div class="header">
+<center><h1 style="display: inline-block">Craft It !</h1><h3 style="display: inline-block">Upload Mark</h3></center>
+</div>
+
+<table style="width:80%">
+	<tr>
+	<th>Student Name</th>
+	<th>Activity</th>
+	<th>Date</th>	
+	<th>Marks</th>
+	<th>Remark</th>
+	<th>Actions</th>
+	</tr>
+	
+	<tr>
+	<td></td>
+	<td><input type="number" name="activity" /></td>
+	<td><input type="date" name="date" /></td>
+	<td><input type="number" name="marks" /></td>
+	<td><input type="text" name="remarks" /></td>
+	<td><button style='font-size:24px'><i class='far fa-edit'></i><button style='font-size:24px'><i class='fas fa-trash-alt'></i></button></button></td>
+	</tr>
+</table>
+</body>
+</html>

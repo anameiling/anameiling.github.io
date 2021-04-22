@@ -12,18 +12,18 @@
 
     .title{
         font-size: 70px;
-        color: darkorange;
+        color: #3333cc;
         position: relative; top:20px;
     }
 
     .activity-page {
         font-size: 40px;
-        color: darkorange;
+        color: #3333cc;
         position: relative; top:20px;
     }
 
     .header {
-        background-color: #f1f1f1;
+        background-color: none;
         padding: 0px;
         text-align: center;
         height: 160px;
@@ -84,28 +84,52 @@
 
     /* Darker background on mouse-over */
     .back-btn:hover, .home-btn:hover, .acc-btn:hover, .exit-btn:hover {
-        background-color: darkorange;
+        background-color: none;
     }
 
     .block-1:hover, .block-2:hover, .block-3:hover {
-        background-color:darkorange;
+        background-color:none;
         color: white;
     } 
 
     .block-1, .block-2, .block-3 {
        display: block;
-       background-color:orange;
-       color: black;
+       background-color:#0066ff;
+       color: white;
        font-size: 30px;
        text-align: center;
        width: 30%;
-       border: 1px solid orange;
+       border: 1px solid #0066ff;
        cursor: pointer;
        border-radius: 2px;
        position: relative; top: -130px;
        margin-left: 800px;
        margin-bottom: 35px;
        padding: 5px;
+    }
+
+    .block-1 span, .block-2 span, .block-3 span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .block-1 span:after, .block-2 span:after, .block-3 span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top:0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    .block-1:hover span, .block-2:hover span, .block-3:hover span {
+        padding-right: 25px;
+    }
+    .block-1:hover span:after, .block-2:hover span:after, .block-3:hover span:after {
+        opacity:1;
+        right: 0;
     }
 
     .col-4-md {
@@ -142,6 +166,7 @@
             margin-left: 80px;
             margin-top: 20px;
         }
+        
 
   </style>
 

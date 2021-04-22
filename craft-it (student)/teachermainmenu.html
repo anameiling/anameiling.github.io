@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Craft It ! </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" href="teachermainmenu.css">
+<link rel = "stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<style>
+
+    *{
+	box-sizing: border-box;
+    }
+    html {
+        background: url("https://i.ibb.co/DrNZ1Yt/bground2.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+    .btn {
+        background-color: #6699ff;
+        border: one;
+        color: white;
+        padding: 13px 16px;
+        font-size: 30px;
+        cursor: pointer;
+        margin-left: 30px;
+        float: left;
+        border-radius: 12px;
+    }
+    .btn-signout {
+        background-color: #6699ff;
+        border: one;
+        color: white;
+        padding: 13px 16px;
+        font-size: 30px;
+        cursor: pointer;
+        margin-right: 30px;
+        float: right;
+        border-radius: 12px;
+    }	
+    .title {
+        color: #3333cc ;
+        text-transform: uppercase;
+        font-size: 40px;
+        top: 40px;
+        float: center;
+        margin-left: 400px;
+    }
+    .h1 {
+        font-size: 15px;
+        text-align: center;
+        margin-top: auto;
+        color: black;
+        
+    }
+    .button {
+        display: inline-block;
+        border-radius:10px;
+        background-color: #ffccff;
+        border: none;
+        color: #3333cc;
+        text-align: center;
+        font-size: 40px;
+        padding: 15px;
+        width: 500px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-left: 360px;
+        margin-right: auto;
+    }
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top:0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    .button:hover span {
+        padding-right: 25px;
+    }
+    .button:hover span:after {
+        opacity:1;
+        right: 0;
+    }
+	
+</style>
+<body>
+
+<button class="btn"><i class= "fa fa-arrow-left"></i></button>
+<button onclick="myFunction()" class="btn-signout"><i class= "fa fa-sign-out"></i></button>
+<script>
+function myFunction() {
+  var txt, link= <a href="accteacher.htm"> </a>;
+  if (confirm("Press a button!")) {
+   <a href="accteacher.htm"> </a>;
+  } else {
+    txt = "You pressed Cancel!";
+}
+}
+</script>
+
+<div class="title">
+<h1>Craft It !</h1>
+</div>
+
+<div class="h1">
+<h1> Hi teacher, what are we going to do today? </h1>
+</div>
+
+<a href="uploadlesson.html"><button type="button" class="button" style="vertical-align:middle"><span>UPLOAD LESSON</span></button></a>
+<br></br>
+<a href="uploadtutorial.html"><button class="button" style="vertical-align:middle"><span>UPLOAD TUTORIAL</span></button></a>
+<br></br>
+<a href="uploadmark.html"><button class="button" style="vertical-align:middle"><span>UPDATE MARKS</span></button></a>
+<br></br>
+
+</body>
+</html>
