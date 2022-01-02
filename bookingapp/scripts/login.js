@@ -20,6 +20,15 @@ function Login(loginName, loginPassword){
     });
 }
 
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+
 window.addEventListener("load", function() {
     document.getElementById("login").addEventListener("click", function() {
         let username = document.getElementById("username").value;
