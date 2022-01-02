@@ -18,15 +18,6 @@ function Login(loginName, loginPassword){
         alert(json.booking.name + " added!");
         console.log(json.login);
     });
-
-    function myFunction() {
-        var x = document.getElementById("myInput");
-        if (x.type === "password") {
-          x.type = "text";
-        } else {
-          x.type = "password";
-        }
-      }
 }
 
 
