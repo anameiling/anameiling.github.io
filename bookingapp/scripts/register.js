@@ -19,18 +19,16 @@ function Register(registerName, registerEmail, registerPassword){
         alert(json.booking.name + " added!");
         console.log(json.register);
     });
-
-    function myFunction() {
-        var x = document.getElementById("myInput");
-        if (x.type === "password") {
-          x.type = "text";
-        } else {
-          x.type = "password";
-        }
-      }
-      
 }
 
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
 
 window.addEventListener("load", function() {
     document.getElementById("register").addEventListener("click", function() {
