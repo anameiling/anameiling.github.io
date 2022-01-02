@@ -1,10 +1,10 @@
-function Register(registerName, registerEmail, registerPassword){
+function Register(username, useremail, userpassword){
     let url = 'https://api.sheety.co/2287ba5e9c156f97e011e5cdc03a23cc/studioBookingApp/register';
     let body = {
         register: {
-            newName: registerName,
-            newEmail: registerEmail,
-            newPassword: registerPassword
+            name: username,
+            email: useremail,
+            password: userpassword
       }
     }
     fetch(url, {
@@ -16,7 +16,7 @@ function Register(registerName, registerEmail, registerPassword){
     })
     .then((response) => response.json())
     .then(json => {
-        alert(json.booking.name + " added!");
+        alert(json.booking.name + " registered!");
         console.log(json.register);
     });
 }
@@ -24,10 +24,10 @@ function Register(registerName, registerEmail, registerPassword){
 window.addEventListener("load", function() {
     document.getElementById("register").addEventListener("click", function() {
         let username = document.getElementById("username").value;
-        let email = document.getElementById("email").value;
-        let password = document.getElementById("password").value;
+        let useremail = document.getElementById("email").value;
+        let userpassword = document.getElementById("password").value;
         
-        Register(username, email, password);
+        Register(username, useremail, userpassword);
     });
 });
 
