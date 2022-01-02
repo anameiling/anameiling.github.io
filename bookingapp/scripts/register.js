@@ -21,15 +21,6 @@ function Register(registerName, registerEmail, registerPassword){
     });
 }
 
-function myFunction() {
-    var x = document.getElementById("myInput");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-  }
-
 window.addEventListener("load", function() {
     document.getElementById("register").addEventListener("click", function() {
         let username = document.getElementById("username").value;
