@@ -15,7 +15,6 @@ function Login(loginName, loginPassword){
     })
     .then((response) => response.json())
     .then(json => {
-        alert(json.booking.name + " added!");
         console.log(json.login);
     });
 }

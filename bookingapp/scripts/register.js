@@ -16,7 +16,7 @@ function Register(username, useremail, userpassword){
     })
     .then((response) => response.json())
     .then(json => {
-        alert(json.booking.name + " registered!");
+        alert(json.register.name + " registered!");
         console.log(json.register);
     });
 }
