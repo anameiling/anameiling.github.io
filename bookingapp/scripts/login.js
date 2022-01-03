@@ -1,5 +1,5 @@
 function Login(loginName, loginPassword){
-    let url = 'https://api.sheety.co/2287ba5e9c156f97e011e5cdc03a23cc/studioSessionBookingApp/login';
+    let url = 'https://api.sheety.co/2287ba5e9c156f97e011e5cdc03a23cc/studioBookingSessionSystem/loginn';
     let body = {
         login: {
             name: loginName,
