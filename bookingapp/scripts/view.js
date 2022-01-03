@@ -4,7 +4,7 @@ function GetBooking() {
         .then((response) => response.json())
         .then(json => {
             // Do something with the data
-            //console.log(json.booking);
+            console.log(json.booking);
             let viewList = document.getElementById("viewList");
             let viewIds = [];
 
