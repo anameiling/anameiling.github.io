@@ -6,7 +6,7 @@ function BookNow(guestName, guestEmail, guestPhone, guestPax, guestSlot, guestMe
             email: guestEmail,
             phone:guestPhone,
             pax: guestPax,
-            slot: guestSlot
+            slot: guestSlot,
             message: guestMessage
          
     }
