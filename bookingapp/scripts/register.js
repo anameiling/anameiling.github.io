@@ -1,5 +1,5 @@
 function Register(username, useremail, userpassword){
-    let url = 'https://api.sheety.co/2287ba5e9c156f97e011e5cdc03a23cc/studioBookingApp/register';
+    let url = 'https://api.sheety.co/2287ba5e9c156f97e011e5cdc03a23cc/studioSessionBookingApp/register';
     let body = {
         register: {
             name: username,
