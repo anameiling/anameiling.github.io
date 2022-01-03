@@ -20,7 +20,7 @@ function GetBooking() {
                 let gPax = json.booking[i].pax;
                 let gId = json.booking[i].id;
                 let gSlot= json.booking[i].slot;
-                // let gMessage= json.booking[i].message;
+                let gMessage= json.booking[i].message;
                 let buttonId = "delete" + gId;
 
                 let row = viewList.insertRow(viewList.rows.length);
@@ -30,8 +30,8 @@ function GetBooking() {
                 row.insertCell(3).innerHTML = gPhone;
                 row.insertCell(4).innerHTML = gPax;
                 row.insertCell(5).innerHTML = gSlot;
-                // row.insertCell(6).innerHTML = gMessage;
-                row.insertCell(6).innerHTML = "<button id='" + buttonId + "'class='btn btn-danger'>Delete</button>";
+                row.insertCell(6).innerHTML = gMessage;
+                row.insertCell(7).innerHTML = "<button id='" + buttonId + "'class='btn btn-danger'>Delete</button>";
 
                 viewIds.push(buttonId);
 
