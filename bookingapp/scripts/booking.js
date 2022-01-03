@@ -8,7 +8,6 @@ function BookNow(guestName, guestEmail, guestPhone, guestPax, guestSlot, guestMe
             pax: guestPax,
             slot: guestSlot,
             message: guestMessage
-         
     }
   }
   fetch(url, {
