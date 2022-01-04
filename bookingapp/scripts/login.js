@@ -17,12 +17,12 @@ function Login(username, password){
 }
 
 
-// window.addEventListener("load", function() {
-//     document.getElementById("login").addEventListener("click", function() {
-//         let username = document.getElementById("username").value;
-//         let password = document.getElementById("password").value;
+window.addEventListener("load", function() {
+    document.getElementById("login").addEventListener("click", function() {
+        let userName = document.getElementById("userName").value;
+        let userPassword = document.getElementById("userPassword").value;
         
-//         Login(username, password);
-//     });
-// });
+        Login(userName, userPassword);
+    });
+});
 

@@ -18,13 +18,13 @@ function Register(username, email, password){
     });
 }
 
-// window.addEventListener("load", function() {
-//     document.getElementById("register").addEventListener("click", function() {
-//         let username = document.getElementById("username").value;
-//         let useremail = document.getElementById("email").value;
-//         let userpassword = document.getElementById("password").value;
+window.addEventListener("load", function() {
+    document.getElementById("register").addEventListener("click", function() {
+        let userName = document.getElementById("userName").value;
+        let userEmail = document.getElementById("userEmail").value;
+        let userPassword = document.getElementById("userPassword").value;
         
-//         Register(username, useremail, userpassword);
-//     });
-// });
+        Register(userName, userEmail, userPassword);
+    });
+});
 
