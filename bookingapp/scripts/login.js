@@ -1,9 +1,9 @@
-function Login(loginName, loginPassword){
+function Login(username, password){
     let url = 'https://api.sheety.co/2287ba5e9c156f97e011e5cdc03a23cc/studioBookingSessionSystem/login';
     let body = {
         login: {
-            username: loginName,
-            password: loginPassword
+            username: username,
+            password: password
       }
     }
     fetch(url, {

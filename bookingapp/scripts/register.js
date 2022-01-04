@@ -1,10 +1,10 @@
-function Register(username, useremail, userpassword){
+function Register(username, email, password){
     let url = 'https://api.sheety.co/2287ba5e9c156f97e011e5cdc03a23cc/studioBookingSessionSystem/register';
     let body = {
         register: {
             name: username,
-            email: useremail,
-            password: userpassword
+            email: email,
+            password: password
       }
     }
     fetch(url, {
